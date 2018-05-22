@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    steps:
+      - run:
+          name: update-npm
+          command: 'sudo npm install'
+      - run:
+          name: test
+          command: npm test
